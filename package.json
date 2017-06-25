@@ -16,10 +16,13 @@
   "author": "rodgc",
   "license": "MIT",
   "dependencies": {
+    "@angular/common": "2.4.2 ||^4.2.4",
+    "@angular/core": "^4.2.4",
     "font-awesome": "^4.7.0"
   },
   "peerDependencies": {
     "@angular/core": "^2.4.2 || ^4.2.3",
+    "@angular/common": "2.4.2 ||^4.2.4",
     "font-awesome": "^4.7.0"
   },
   "devDependencies": {
