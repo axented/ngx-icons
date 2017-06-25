@@ -53,6 +53,8 @@ Name      | Type               | Options                                   | Opt
 name      | `String`           | [F-A Icons](http://fontawesome.io/icons/) | No
 size      | `String`           | `lg, 2x, 3x, 4x, 5x`                      | Yes
 fixed     | `Boolean`          | `true / false`                            | Yes
-animation |  `String`          | `spin / pulse`                            | Yes
-rotate    |  `Number / String` | `90 / 180 / 270` `horizontal / vertical`  | Yes
-inverse   |  `Boolean`         | `true / false`                            | Yes
+animation | `String`           | `spin / pulse`                            | Yes
+rotate    | `Number / String`  | `90 / 180 / 270` `horizontal / vertical`  | Yes
+inverse   | `Boolean`          | `true / false`                            | Yes
+qoute     | `String`           | `left / right`                            | Yes
+pull      | `String`           | `left / right`                            | Yes

@@ -1,0 +1,1 @@
+export { FontAwesomeModule } from './src/font-awesome/font-awesome.module';
