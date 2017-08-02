@@ -38,3 +38,14 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
+Desktop.ini
+
+# Yarn
+yarn-error.log
+
+# JetBrains
+.idea/
+
+# Temporary files
+coverage/
+docs

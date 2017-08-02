@@ -13,6 +13,7 @@
 The following icon libraries are supported
 
 * Font Awesome
+* Themify Icons
 
  # Use Font Awesome
 
@@ -58,3 +59,40 @@ rotate    | `Number / String`  | `90 / 180 / 270` `horizontal / vertical`  | Yes
 inverse   | `Boolean`          | `true / false`                            | Yes
 qoute     | `String`           | `left / right`                            | Yes
 pull      | `String`           | `left / right`                            | Yes
+
+ # Use Themify Icons
+
+ **Install**
+
+ Download icons from [Themify](https://themify.me/themify-icons) the add the ‘themify-icons.css’ file and ‘fonts’ to folder.
+
+**Import the module**
+```typescript
+//...
+import { ThemifyIcons } from 'ngx-icons';
+@NgModule({
+  //...
+  imports: [
+    //...
+    ThemifyIcons
+  ],
+  //...
+})
+export class AppModule { }
+```
+
+**If you're using [Angular CLI](https://github.com/angular/angular-cli), add  CSS to `styles` inside the `.angular-cli.json`**
+```json
+"styles": [
+    "styles.css",
+    "../path/to/themify-icons.css"
+],
+```
+
+# Usage and Options
+To use the component use selector: `<ti></ti>`.
+
+
+Name      | Type               | Options                                   | Optional
+---       | ---                | ---                                       | ---
+name      | `String`           | [Themnify Icons](https://themify.me/themify-icons) | No
