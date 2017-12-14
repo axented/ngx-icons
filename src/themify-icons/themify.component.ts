@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class ThemifyComponent implements OnInit {
-  @Input() private name: string;
+  @Input() public name: string;
   private _options: string[] = [];
 
   public ngOnInit() {
