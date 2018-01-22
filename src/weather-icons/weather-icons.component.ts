@@ -57,9 +57,6 @@ export class WeatherIconsComponent implements OnInit {
       this.name = `${this.name}-${this.time}`;
     }
 
-    console.log('Weather Icons:');
-    console.log('wi wi-' + this.name);
-    console.log(this._options);
   }
 
   get options() {
