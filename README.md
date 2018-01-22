@@ -141,7 +141,7 @@ Name      | Type               | Options                                   | Opt
 name      | `String`           | [W-I Icons](https://erikflowers.github.io/weather-icons/) | No
 fixed     | `Boolean`          | `true / false`                            | Yes
 rotate    | `Number`           | `90 / 180 / 270`                          | Yes
-Flip      | `String`           | `horizontal / vertical`                   | Yes
+flip      | `String`           | `horizontal / vertical`                   | Yes
 direction | `String`           | `towards / from`                          | Yes, only for `wind` default `towards`
 degree    | `Number`           | `0-360`                                   | Yes, only for `wind` default `0`
 cardinal  | `String`           | `n - nnw`                                 | Yes, only for `wind` default `n`
