@@ -145,7 +145,7 @@ flip      | `String`           | `horizontal / vertical`                   | Yes
 direction | `String`           | `towards / from`                          | Yes, only for `wind` default `towards`
 degree    | `Number`           | `0-360`                                   | Yes, only for `wind` default `0`
 cardinal  | `String`           | `n - nnw`                                 | Yes, only for `wind` default `n`
-beufort   | `Number`           | `0-11`                                    | Yes, only for `wind-beufort` default `0`
+beaufort  | `Number`           | `0-11`                                    | Yes, only for `wind-beaufort` default `0`
 time      | `Number`           | `1-12`                                    | Yes, only for `time` default 1
 
 **Examples:**
