@@ -104,8 +104,9 @@ name      | `String`           | [Themnify Icons](https://themify.me/themify-ico
  **Install**
 
  ```shell
- $ npm install --save  weather-icons
+ $ npm install --save  git+https://github.com/erikflowers/weather-icons.git
  ```
+ Note that `npm install --save weather-icons` installs legacy version 1.5
 
 **Import the module**
 ```typescript
@@ -130,7 +131,7 @@ export class AppModule { }
     "../node_modules/weather-icons/css/weather-icons-wind.css"
 ],
 ```
-Note that `weather-icons-wind.css` is only needed for wind direction icons.
+Note that if you do not require the wind direction icons you can drop `weather-icons-wind.css`.
 
 # Usage and Options
 To use the component use selector: `<wi></wi>`.
@@ -138,9 +139,18 @@ To use the component use selector: `<wi></wi>`.
 Name      | Type               | Options                                   | Optional
 ---       | ---                | ---                                       | ---
 name      | `String`           | [W-I Icons](https://erikflowers.github.io/weather-icons/) | No
-size      | `String`           | `lg, 2x, 3x, 4x, 5x`                      | Yes
 fixed     | `Boolean`          | `true / false`                            | Yes
-rotate    | `Number / String`  | `90 / 180 / 270` / `horizontal / vertical`  | Yes
-direction   | `String`          | `towards / from`                            | Yes, only for name `wind`
-degree     | `Number / String`           | `0-360 / n-nnw`                             | Yes, only for name `wind`
-beufort      | `Number`           | `0-11`                            | Yes, only for name `wind-beufort`
+rotate    | `Number`           | `90 / 180 / 270`                          | Yes
+Flip      | `String`           | `horizontal / vertical`                   | Yes
+direction | `String`           | `towards / from`                          | Yes, only for `wind` default `towards`
+degree    | `Number`           | `0-360`                                   | Yes, only for `wind` default `0`
+cardinal  | `String`           | `n - nnw`                                 | Yes, only for `wind` default `n`
+beufort   | `Number`           | `0-11`                                    | Yes, only for `wind-beufort` default `0`
+time      | `Number`           | `1-12`                                    | Yes, only for `time` default 1
+
+**Examples:**
+* `<wi name="wind" direction="from" degree="78"></wi>`
+* `<wi name="sleet" fixed="true"></wi>`
+* `<wi name="time" time="7"></wi>`
+* `<wi name="raindrop" flip="vertical"></wi>`
+* `<wi name="fire" rotate="90"></wi>`
