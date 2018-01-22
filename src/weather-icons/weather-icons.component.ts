@@ -15,7 +15,7 @@ export class WeatherIconsComponent implements OnInit {
   @Input() public rotate?: number;
   @Input() public flip?: string;
   @Input() public direction?: string;
-  @Input() public degree?: number
+  @Input() public degree?: number;
   @Input() public cardinal?: string;
   @Input() public beaufort?: number;
   @Input() public time?: number;
@@ -36,7 +36,9 @@ export class WeatherIconsComponent implements OnInit {
       this.addOption(`wi-rotate-${this.rotate}`);
     }
 
-    if (this.flip === 'horizontal' || this.flip === 'vertical') { this.addOption(`wi-flip-${this.flip}`); }
+    if (this.flip === 'horizontal' || this.flip === 'vertical') {
+      this.addOption(`wi-flip-${this.flip}`);
+    }
 
     if (this.name === 'wind' && (this.direction === 'towards' || this.direction === 'from')) {
 
